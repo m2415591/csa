@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="product.html">Товары</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Добро пожаловать в наш магазин<br>Лучшие товары по лучшим ценам!</h1>
+
+        <!-- Блок для фильтрации -->
+        <div id="filter-section">
+            <label for="category-filter">Фильтр по категории:</label>
+            <select id="category-filter">
+                <option value="all">Все категории</option>
+                <!-- Опции будут добавлены динамически -->
+            </select>
+        </div>
+
+        <!-- Контейнер для списка товаров -->
+        <div id="product-list">
+            <!-- Товары будут вставлены сюда с помощью JavaScript -->
+            <p>Загрузка товаров...</p>
+        </div>
+
+        <!-- Блок корзины -->
+        <div id="cart-section">
+            <h2>Корзина</h2>
+            <ul id="cart-items">
+                <!-- Элементы корзины будут добавлены здесь -->
+            </ul>
+            <div id="cart-total">Итого: $0.00</div>
+            <button id="checkout-btn">Оплатить</button>
+            <button id="clear-cart-btn">Очистить корзину</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script> <!-- Подключение скрипта -->
+</body>
+</html>

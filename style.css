@@ -1,0 +1,189 @@
+/* Основные стили страницы */
+body {
+    background: rgb(45, 24, 102);
+    color: rgb(255, 0, 102);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+/* Меню сайта */
+.menu {
+    background: rgb(255, 0, 102);
+    padding: 15px 0;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+.menu a {
+    color: rgb(34, 5, 107);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.menu a:hover {
+    color: rgb(0, 255, 99);
+}
+/* Заголовки товара */
+.product-title {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    background: rgb(255, 0, 102);
+    padding: 10px;
+    margin: 20px 0 10px 0;
+}
+/* Краткое описание товара */
+.short-description {
+    color: rgb(255, 0, 213);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    padding: 10px;
+}
+/* Подробное описание товара */
+.full-description {
+    color: rgb(255, 0, 213);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding: 10px;
+}
+/* Список характеристик */
+.specifications {
+    list-style-image: url('images/marker.png'); /* Убедитесь, что изображение существует */
+    font-weight: bold;
+    color: rgb(0, 255, 98);
+    padding: 10px 20px;
+}
+.specifications li {
+    margin: 5px 0;
+}
+/* Основной контент */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: rgb(0, 255, 99);
+}
+
+/* --- Стили для новых элементов --- */
+
+#filter-section {
+    margin-bottom: 20px;
+    text-align: center; /* Центрируем фильтр */
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap; /* Для адаптивного расположения карточек */
+    gap: 20px; /* Расстояние между карточками */
+    margin-bottom: 40px; /* Отступ перед корзиной */
+}
+
+.product-card { /* Стиль для карточки товара */
+    border: 1px solid #ccc;
+    padding: 15px;
+   33% - 20px); /* Пример ширины для 3 колонок */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.product-card h3 {
+    margin-top: 0;
+    color: #000;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.product-card button {
+    background-color: rgb(255, 0, 102); /* Цвет кнопки */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #cc0052; /* Темнее при наведении */
+}
+
+#cart-section {
+    border-top: 2px solid rgb(255, 0, 102);
+    padding-top: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-total {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: right;
+}
+
+#checkout-btn, #clear-cart-btn {
+    background-color: rgb(0, 255, 99); /* Цвет кнопки оплаты */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#checkout-btn:hover, #clear-cart-btn:hover {
+    opacity: 0.8;
+}
+
+#clear-cart-btn {
+    background-color: rgb(255, 0, 102); /* Цвет кнопки очистки */
+}
+
+button {
+    background-color: rgb(0, 255, 99); /* Цвет стандартной кнопки */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание если внутри <a> */
+    display: inline-block; /* Позволяет задать padding */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Скрытие товара при фильтрации */
+.hidden {
+    display: none !important;
+}
